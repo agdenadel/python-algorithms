@@ -1,11 +1,15 @@
 import unittest
 from merge_sort import merge_sort
+from quick_sort import quick_sort
 from bubble_sort import bubble_sort
 
 
 class SortingTests(unittest.TestCase):
     def test_merge_sort(self):
         self.sorting_tests(merge_sort)
+
+    def test_quick_sort(self):
+        self.sorting_tests(quick_sort)
 
     def test_bubble_sort(self):
         self.sorting_tests(bubble_sort)
