@@ -1,7 +1,7 @@
 from collections import Counter
 
 
-class KNN():
+class KNN:
     """ Implements K Nearest Neighbors classifier. """
 
     def __init__(self, k, distance_function):
@@ -34,8 +34,9 @@ class KNN():
         Args:
             test_value:
             training_set:
-        """       
-        nearest_neighbors = sorted(training_set, key=lambda x: self.distance_function(test_value.coordinate, x.coordinate))[0:self.k]
+        """
+        nearest_neighbors = sorted(training_set,
+                                   key=lambda x: self.distance_function(test_value.coordinate, x.coordinate))[0:self.k]
         return self.vote(nearest_neighbors)
 
     def predict_multiple(self, test_values, training_set):
