@@ -7,7 +7,7 @@ def merge_sort(array):
                 merged.extend(arr2[j:])
                 merged.extend(arr1[i:])
                 break
-            elif arr1[i] < arr2[j]:
+            elif arr1[i] <= arr2[j]:
                 merged.append(arr1[i])
                 i += 1
             elif arr1[i] > arr2[j]:
