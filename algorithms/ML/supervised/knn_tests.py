@@ -17,6 +17,4 @@ class KNNTests(unittest.TestCase):
 
         self.assertEqual(knn.predict(Point((0, 0), None), points), 'blue')
 
-
-if __name__ == '__main__':
-    unittest.main()
+unittest.main()

@@ -17,9 +17,6 @@ class KMeansTests(unittest.TestCase):
 
         closest_centroids, centroids = kmeans.predict(points)
 
-        for centroid in centroids:
-            print centroid
-
         # first cluster
         self.assertEqual(closest_centroids[0], closest_centroids[1])
         self.assertEqual(closest_centroids[0], closest_centroids[2])
@@ -39,7 +36,4 @@ class KMeansTests(unittest.TestCase):
         self.assertEqual(closest_centroids[9], closest_centroids[16])
         self.assertEqual(closest_centroids[9], closest_centroids[17])
 
-
-
-if __name__ == '__main__':
-    unittest.main()
+unittest.main()

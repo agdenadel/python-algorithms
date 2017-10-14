@@ -9,5 +9,4 @@ class DistanceFunctionTests(unittest.TestCase):
         self.assertEqual(1.0, euclidean_distance((1, 1), (1, 2)))
 
 
-if __name__ == '__main__':
-    unittest.main()
+unittest.main()
