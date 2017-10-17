@@ -14,4 +14,7 @@ class EuclideanAlgorithmTests(unittest.TestCase):
         y = 9
         self.assertEqual(euclidean_algorithm(x, y), 1)
 
+    def test_reflexive(self):
+        self.assertEqual(euclidean_algorithm(5, 5), 5)
+
 unittest.main()
