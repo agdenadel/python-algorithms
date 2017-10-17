@@ -31,4 +31,8 @@ class SortingTests(unittest.TestCase):
         array = [3, 2, 1]
         self.assertEqual(sort_function(array), [1, 2, 3])
 
+    def sort_tester_empty_array(self, sort_function):
+        array = []
+        self.assertEqual(sort_function(array), [])
+
 unittest.main()

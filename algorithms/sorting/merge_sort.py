@@ -15,7 +15,7 @@ def merge_sort(array):
                 j += 1
         return merged
 
-    if len(array) == 1:
+    if len(array) == 1 or len(array) == 1:
         return array
 
     return merge(merge_sort(array[0:len(array) // 2]), merge_sort(array[len(array) // 2:]))
